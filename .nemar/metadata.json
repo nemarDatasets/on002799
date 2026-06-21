@@ -1,0 +1,59 @@
+{
+  "version": "2.0",
+  "dataset_id": "on002799",
+  "source": "openneuro",
+  "source_id": "ds002799",
+  "title": "Human es-fMRI Resource: Concurrent deep-brain stimulation and whole-brain functional MRI",
+  "authors": {
+    "Thompson WH*": {},
+    "Nair R*": {},
+    "Oya H*": {},
+    "Esteban O": {},
+    "Shine JM": {},
+    "Petkov CI": {},
+    "Poldrack RA": {},
+    "Howard M": {},
+    "Adolphs R†": {},
+    "*equally contributing, †corresponding author": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds002799.v1.0.4",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "1.0.0",
+  "recording_modality": [
+    "anat",
+    "fmap",
+    "func",
+    "ieeg"
+  ],
+  "datatypes": [
+    "anat",
+    "fmap",
+    "func",
+    "ieeg"
+  ],
+  "funding_references": [
+    {
+      "funder_name": "Funded by NIH grant U01NS103780 (RP, RA and MH)"
+    },
+    {
+      "funder_name": "The Simons Foundation Collaboration on the Global Brain (RA)"
+    },
+    {
+      "funder_name": "Knut and Alice Wallenberg Foundation grant 2016.0473 (WHT)"
+    },
+    {
+      "funder_name": "UK Wellcome Trust (CIP) and European Research Council (CIP)"
+    },
+    {
+      "funder_name": "The OpenNeuro repository is funded by NIH Grant R24MH117179 (RP)"
+    }
+  ]
+}
