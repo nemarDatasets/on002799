@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on002799-blue)](https://doi.org/10.82901/nemar.on002799)
+
 Link to published paper for this data resource: https://rdcu.be/b57kz
 
 This collection contains data from 26 human patients who underwent electrical stimulation during functional magnetic resonance imaging (es-fMRI). The patients had medically refractory epilepsy requiring surgically implanted intracranial electrodes in cortical and subcortical locations. One or multiple contacts on these electrodes were stimulated while simultaneously recording BOLD-fMRI activity in a block design. Multiple runs exist for patients with different stimulation sites. 
