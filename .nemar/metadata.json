@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Human es-fMRI Resource: Concurrent deep-brain stimulation and whole-brain functional MRI",
+  "description": "This dataset comprises concurrent deep-brain electrical stimulation and whole-brain functional MRI data from 26 patients with medically refractory epilepsy. Patients underwent intracranial electrode implantation for clinical purposes, with stimulation applied to cortical and subcortical sites during BOLD-fMRI acquisition in block-design paradigms. The resource includes anatomical imaging, resting-state fMRI, electrode coordinates, stimulation parameters, and preprocessed derivatives, providing a unique human neuroimaging resource for investigating brain responses to direct electrical stimulation.",
+  "methods_description": "Data were collected from 26 human patients with medically refractory epilepsy who had surgically implanted intracranial electrodes. Electrical stimulation was applied to one or multiple electrode contacts during functional MRI acquisition using a block design. Multiple runs were acquired for patients with different stimulation sites. The dataset includes T1-weighted and T2-weighted anatomical images, resting-state fMRI scans (pre-operative), electrical stimulation fMRI scans (post-operative), field maps, and electrode coordinates with stimulation parameters. Preprocessing was performed using fMRIPrep and FreeSurfer.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -16,12 +18,29 @@
     "Adolphs R†": {},
     "*equally contributing, †corresponding author": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds002799.v1.0.4",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "fMRI"
     },
+    {
+      "term": "deep brain stimulation"
+    },
+    {
+      "term": "intracranial electrodes"
+    },
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+    },
+    {
+      "term": "BOLD imaging"
+    },
+    {
+      "term": "functional neuroimaging"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on002799",
       "identifier_type": "URL",
@@ -31,6 +50,11 @@
       "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on002799",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds002799.v1.0.4",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -63,15 +87,15 @@
       "award_number": "R24MH117179"
     }
   ],
+  "resource_type_specific": "Structural MRI Dataset",
   "modalities": [
     "anat",
     "func",
     "ieeg",
     "fmap"
   ],
-  "resource_type_specific": "Structural MRI Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "187.9 GB (12568 files)"
   ],
   "formats": [
     ".2mm/README",
@@ -151,36 +175,8 @@
     ".volume",
     ".white",
     ".white_avg",
-    ".xfm"
+    ".xfm",
+    ".yml"
   ],
-  "description": "This dataset comprises concurrent electrical stimulation and functional MRI (es-fMRI) recordings from 26 patients with medically refractory epilepsy who had surgically implanted intracranial electrodes. The resource includes BOLD-fMRI responses to electrical stimulation of cortical and subcortical sites, along with anatomical imaging, resting-state scans, field maps, and electrode localization data. Pre-processed derivatives using fMRIprep and FreeSurfer are provided, enabling investigation of brain network responses to direct electrical stimulation.",
-  "methods_description": "Electrical stimulation was delivered through implanted intracranial electrodes during functional MRI acquisition using a block design. Data were collected in two sessions: pre-operative (baseline imaging) and post-operative (es-fMRI with stimulation). Anatomical imaging included T1-weighted and T2-weighted sequences. Stimulation parameters and electrode coordinates are documented for each run.",
-  "keywords": [
-    {
-      "term": "fMRI"
-    },
-    {
-      "term": "deep brain stimulation"
-    },
-    {
-      "term": "intracranial electrodes"
-    },
-    {
-      "term": "Epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
-    },
-    {
-      "term": "BOLD imaging"
-    },
-    {
-      "term": "Brain Mapping",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D001931"
-    },
-    {
-      "term": "functional connectivity"
-    }
-  ],
-  "source_hash": "810b962344e35b35f34e10b296ad5cdee77fa8e5c1314766e610792aaf871883"
+  "source_hash": "f5b78f72847a02d13d0815d57bf53e4e80208a986b992f7be0aa0198578702d5"
 }
