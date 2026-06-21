@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Human es-fMRI Resource: Concurrent deep-brain stimulation and whole-brain functional MRI",
-  "description": "This dataset comprises concurrent deep-brain electrical stimulation and whole-brain functional MRI data from 26 patients with medically refractory epilepsy. Patients underwent intracranial electrode implantation for clinical purposes, with stimulation applied to cortical and subcortical sites during BOLD-fMRI acquisition in block-design paradigms. The resource includes anatomical imaging, resting-state fMRI, electrode coordinates, stimulation parameters, and preprocessed derivatives, providing a unique human neuroimaging resource for investigating brain responses to direct electrical stimulation.",
-  "methods_description": "Data were collected from 26 human patients with medically refractory epilepsy who had surgically implanted intracranial electrodes. Electrical stimulation was applied to one or multiple electrode contacts during functional MRI acquisition using a block design. Multiple runs were acquired for patients with different stimulation sites. The dataset includes T1-weighted and T2-weighted anatomical images, resting-state fMRI scans (pre-operative), electrical stimulation fMRI scans (post-operative), field maps, and electrode coordinates with stimulation parameters. Preprocessing was performed using fMRIPrep and FreeSurfer.",
+  "description": "This dataset comprises concurrent deep-brain electrical stimulation and whole-brain functional MRI data from 26 patients with medically refractory epilepsy. Patients underwent intracranial electrode implantation for clinical purposes, with one or multiple electrode contacts stimulated during fMRI acquisition using block design protocols. The resource includes anatomical imaging (T1, T2), resting-state fMRI, electrical stimulation-fMRI (es-fMRI) scans, field maps, electrode coordinates, and stimulation parameters, along with preprocessed derivatives.",
+  "methods_description": "Data were collected from 26 human patients with surgically implanted intracranial electrodes in cortical and subcortical locations for medically refractory epilepsy. Electrical stimulation was applied to one or multiple electrode contacts during concurrent BOLD-fMRI acquisition using block design protocols. Data organization includes pre-operative (pre-implantation) and post-operative (post-implantation) sessions with anatomical scans, resting-state fMRI, es-fMRI scans, and associated field maps. Preprocessing was performed using fMRIprep and Freesurfer.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -37,7 +37,7 @@
       "term": "BOLD imaging"
     },
     {
-      "term": "functional neuroimaging"
+      "term": "neuroimaging"
     }
   ],
   "related_identifiers": [
