@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Human es-fMRI Resource: Concurrent deep-brain stimulation and whole-brain functional MRI",
-  "description": "This dataset comprises concurrent deep-brain electrical stimulation and whole-brain functional MRI data from 26 patients with medically refractory epilepsy. Patients underwent intracranial electrode implantation for clinical purposes, with one or multiple electrode contacts stimulated during fMRI acquisition using block design protocols. The resource includes anatomical imaging (T1, T2), resting-state fMRI, electrical stimulation-fMRI (es-fMRI) scans, field maps, electrode coordinates, and stimulation parameters, along with preprocessed derivatives.",
-  "methods_description": "Data were collected from 26 human patients with surgically implanted intracranial electrodes in cortical and subcortical locations for medically refractory epilepsy. Electrical stimulation was applied to one or multiple electrode contacts during concurrent BOLD-fMRI acquisition using block design protocols. Data organization includes pre-operative (pre-implantation) and post-operative (post-implantation) sessions with anatomical scans, resting-state fMRI, es-fMRI scans, and associated field maps. Preprocessing was performed using fMRIprep and Freesurfer.",
+  "description": "This dataset contains concurrent electrical stimulation and functional MRI (es-fMRI) recordings from 26 patients with medically refractory epilepsy who had intracranial electrodes implanted in cortical and subcortical sites. Selected electrode contacts were stimulated in a block design while whole-brain BOLD activity was recorded. The resource includes pre-operative and post-operative sessions, structural scans, resting-state scans, field maps, stimulation coordinates and parameters, and fMRIPrep and FreeSurfer derivatives.",
+  "methods_description": "Patients underwent es-fMRI after surgical implantation of intracranial electrodes. One or more contacts were stimulated in a block design during BOLD-fMRI acquisition. Pre-operative sessions included T1, T2 and resting-state scans. Post-operative sessions included es-fMRI runs, field maps, stimulation electrode coordinates and stimulation parameters. Preprocessing used fMRIPrep and FreeSurfer.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -20,10 +20,15 @@
   },
   "keywords": [
     {
-      "term": "fMRI"
+      "term": "electrical stimulation"
     },
     {
-      "term": "deep brain stimulation"
+      "term": "functional MRI"
+    },
+    {
+      "term": "Deep Brain Stimulation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
     },
     {
       "term": "intracranial electrodes"
@@ -34,10 +39,10 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
-      "term": "BOLD imaging"
+      "term": "BOLD"
     },
     {
-      "term": "neuroimaging"
+      "term": "fMRIPrep"
     }
   ],
   "related_identifiers": [
@@ -47,14 +52,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on002799",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds002799.v1.0.4",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on002799",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -95,7 +100,7 @@
     "fmap"
   ],
   "sizes": [
-    "187.9 GB (12568 files)"
+    "175 GB (12568 files)"
   ],
   "formats": [
     ".2mm/README",
